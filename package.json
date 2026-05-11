@@ -1,0 +1,35 @@
+{
+  "name": "uuidgen",
+  "version": "0.1.0",
+  "description": "Generate UUID v4, UUID v7, ULID and Nano ID instantly. One-click copy — no tracking, no dependencies.",
+  "module": "index.ts",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "David Legrand",
+    "email": "me@davlgd.com",
+    "url": "https://davlgd.fr"
+  },
+  "homepage": "https://github.com/davlgd/uuidgen",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davlgd/uuidgen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/davlgd/uuidgen/issues"
+  },
+  "engines": {
+    "bun": ">=1.2.3"
+  },
+  "scripts": {
+    "dev": "bun run --hot index.ts",
+    "start": "bun run index.ts",
+    "typecheck": "tsgo --noEmit",
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.3.13",
+    "@typescript/native-preview": "beta"
+  }
+}

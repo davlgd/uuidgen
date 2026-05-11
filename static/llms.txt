@@ -1,0 +1,18 @@
+# UUID & ID Generator
+
+> Generate UUID v4, UUID v7, ULID and Nano ID instantly. One-click copy — no tracking, no dependencies.
+> Source: https://github.com/davlgd/uuidgen
+
+All identifiers are generated server-side using cryptographically secure randomness (`crypto.randomUUID`, `Bun.randomUUIDv7`, `crypto.getRandomValues`). No data is stored or logged. No tracking.
+
+## Supported formats
+
+- **UUID v4**: 128-bit identifier from 122 bits of cryptographic randomness (RFC 9562)
+- **UUID v7**: Timestamp-prefixed UUID, lexicographically sortable by creation time (RFC 9562)
+- **ULID**: Universally Unique Lexicographically Sortable Identifier, 26-char Crockford Base32
+- **Nano ID**: Compact 21-char URL-safe identifier, 126 bits of entropy
+
+## API
+
+- `GET /` with `Accept: application/json` or `Accept: text/yaml` returns all four identifiers at once (`uuidv4`, `uuidv7`, `ulid`, `nanoid`).
+- `GET /:type` returns one identifier of the given type. Valid types: `uuidv4`, `uuidv7`, `ulid`, `nanoid`.
