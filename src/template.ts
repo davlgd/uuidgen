@@ -62,6 +62,7 @@ export function html(): string {
 <meta name="twitter:title" content="${SITE.title}">
 <meta name="twitter:description" content="${SITE.description}">
 <link rel="canonical" href="${SITE.url}">
+<link rel="icon" href="data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'&gt;&lt;rect width='64' height='64' rx='12' fill='%231f6e60'/&gt;&lt;text x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='ui-monospace,monospace' font-size='28' font-weight='700' fill='%23fbfaf6'&gt;id&lt;/text&gt;&lt;/svg&gt;">
 <link rel="stylesheet" href="/styles.css">
 <title>${SITE.title} — UUID v4, v7, ULID, Nano ID</title>
 <script type="application/ld+json">${JSON_LD}</script>
